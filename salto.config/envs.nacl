@@ -1,0 +1,10 @@
+envs {
+  envs = [
+    {
+      name = "SFDC - Zalary Prod"
+      accountToServiceName = {
+        salesforce = "salesforce"
+      }
+    },
+  ]
+}
