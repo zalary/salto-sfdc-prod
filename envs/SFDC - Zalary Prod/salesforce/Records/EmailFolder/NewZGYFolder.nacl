@@ -1,0 +1,7 @@
+salesforce.EmailFolder NewZGYFolder {
+  accessType = "Public"
+  name = "New ZGY Folder"
+  publicFolderAccess = "ReadWrite"
+  fullName = "NewZGYFolder"
+  _alias = "NewZGYFolder"
+}
