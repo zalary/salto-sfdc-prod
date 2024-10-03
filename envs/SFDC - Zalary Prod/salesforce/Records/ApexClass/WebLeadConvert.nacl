@@ -1,0 +1,15 @@
+salesforce.ApexClass WebLeadConvert {
+  apiVersion = 44
+  status = "Active"
+  fullName = "WebLeadConvert"
+  content = file("salesforce/Records/ApexClass/WebLeadConvert.cls")
+  _generated_dependencies = [
+    {
+      reference = salesforce.Lead
+    },
+    {
+      reference = salesforce.Opportunity
+    },
+  ]
+  _alias = "WebLeadConvert"
+}

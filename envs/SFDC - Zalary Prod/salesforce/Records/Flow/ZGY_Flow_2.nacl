@@ -55,6 +55,6 @@ salesforce.Flow ZGY_Flow_2 {
       targetReference = "note"
     }
   }
-  status = "Draft"
+  status = "Active"
   _alias = "ZGY Flow 2"
 }
