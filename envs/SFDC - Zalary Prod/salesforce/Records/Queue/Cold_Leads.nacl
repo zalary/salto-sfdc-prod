@@ -1,0 +1,15 @@
+salesforce.Queue Cold_Leads {
+  fullName = "Cold_Leads"
+  doesSendEmailToMembers = false
+  email = "sfdc@zsalto.io"
+  name = "Cold Leads"
+  queueMembers = {
+    users = {
+      user = "sfdc@zsalto.io"
+    }
+  }
+  queueSobject = {
+    sobjectType = "Lead"
+  }
+  _alias = "Cold_Leads"
+}
