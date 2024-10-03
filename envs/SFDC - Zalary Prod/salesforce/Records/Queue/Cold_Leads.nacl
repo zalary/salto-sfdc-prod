@@ -1,11 +1,11 @@
 salesforce.Queue Cold_Leads {
   fullName = "Cold_Leads"
   doesSendEmailToMembers = false
-  email = "zalary@hotmail.com"
+  email = "zela@salto.io"
   name = "Cold Leads"
   queueMembers = {
     users = {
-      user = "zalary@hotmail.com"
+      user = "zela@salto.io"
     }
   }
   queueSobject = {
