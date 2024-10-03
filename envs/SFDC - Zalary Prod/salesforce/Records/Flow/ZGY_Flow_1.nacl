@@ -1,0 +1,62 @@
+salesforce.Flow ZGY_Flow_1 {
+  fullName = "ZGY_Flow_1"
+  actionCalls = {
+    name = "send_email"
+    label = "send email"
+    locationX = 564
+    locationY = 209
+    actionName = "emailSimple"
+    actionType = "emailSimple"
+    flowTransactionModel = "CurrentTransaction"
+    inputParameters = [
+      {
+        name = "emailSubject"
+        value = {
+          elementReference = "$Flow.CurrentDateTime"
+        }
+      },
+      {
+        name = "emailBody"
+        value = {
+          elementReference = "$User.Alias"
+        }
+      },
+    ]
+    nameSegment = "emailSimple"
+    versionSegment = 1
+  }
+  apiVersion = 60
+  environments = "Default"
+  interviewLabel = "ZGY Flow 1 {!$Flow.CurrentDateTime}"
+  label = "ZGY Flow 1"
+  processMetadataValues = [
+    {
+      name = "BuilderType"
+      value = {
+        stringValue = "LightningFlowBuilder"
+      }
+    },
+    {
+      name = "CanvasMode"
+      value = {
+        stringValue = "FREE_FORM_CANVAS"
+      }
+    },
+    {
+      name = "OriginBuilderType"
+      value = {
+        stringValue = "LightningFlowBuilder"
+      }
+    },
+  ]
+  processType = "AutoLaunchedFlow"
+  start = {
+    locationX = 437
+    locationY = 48
+    connector = {
+      targetReference = "send_email"
+    }
+  }
+  status = "InvalidDraft"
+  _alias = "ZGY Flow 1"
+}
