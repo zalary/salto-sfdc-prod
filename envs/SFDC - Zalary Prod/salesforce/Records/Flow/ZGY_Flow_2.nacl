@@ -1,0 +1,60 @@
+salesforce.Flow ZGY_Flow_2 {
+  fullName = "ZGY_Flow_2"
+  actionCalls = {
+    name = "note"
+    label = "note"
+    locationX = 566
+    locationY = 202
+    actionName = salesforce.QuickAction.instance.NewNote
+    actionType = "quickAction"
+    flowTransactionModel = "CurrentTransaction"
+    inputParameters = [
+      {
+        name = "Title"
+        value = {
+          elementReference = "$System.OriginDateTime"
+        }
+      },
+      {
+        name = "Body"
+      },
+    ]
+    nameSegment = "NewNote"
+    versionSegment = 1
+  }
+  apiVersion = 60
+  description = "v3"
+  environments = "Default"
+  interviewLabel = "ZGY Flow 2 {!$Flow.CurrentDateTime}"
+  label = "ZGY Flow 2"
+  processMetadataValues = [
+    {
+      name = "BuilderType"
+      value = {
+        stringValue = "LightningFlowBuilder"
+      }
+    },
+    {
+      name = "CanvasMode"
+      value = {
+        stringValue = "FREE_FORM_CANVAS"
+      }
+    },
+    {
+      name = "OriginBuilderType"
+      value = {
+        stringValue = "LightningFlowBuilder"
+      }
+    },
+  ]
+  processType = "AutoLaunchedFlow"
+  start = {
+    locationX = 422
+    locationY = 66
+    connector = {
+      targetReference = "note"
+    }
+  }
+  status = "Draft"
+  _alias = "ZGY Flow 2"
+}
