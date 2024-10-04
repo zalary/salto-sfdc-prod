@@ -6,6 +6,7 @@ type salesforce.Lead {
     updateable = false
     queryable = true
     _hidden_value = true
+    encryptionScheme = "None"
   }
   salesforce.Currency AnnualRevenue {
     apiName = "Lead.AnnualRevenue"
@@ -38,6 +39,7 @@ type salesforce.Lead {
     unique = false
     caseSensitive = false
     queryable = true
+    encryptionScheme = "None"
   }
   salesforce.Text CompanyDunsNumber {
     apiName = "Lead.CompanyDunsNumber"
@@ -64,6 +66,7 @@ type salesforce.Lead {
     createable = true
     updateable = true
     queryable = true
+    encryptionScheme = "None"
   }
   salesforce.Unknown DoNotCall {
     apiName = "Lead.DoNotCall"
@@ -76,6 +79,7 @@ type salesforce.Lead {
     updateable = true
     unique = false
     queryable = true
+    encryptionScheme = "None"
   }
   salesforce.Phone Fax {
     apiName = "Lead.Fax"
@@ -83,6 +87,7 @@ type salesforce.Lead {
     createable = true
     updateable = true
     queryable = true
+    encryptionScheme = "None"
   }
   salesforce.Picklist GenderIdentity {
     apiName = "Lead.GenderIdentity"
@@ -142,6 +147,7 @@ type salesforce.Lead {
     createable = true
     updateable = true
     queryable = true
+    encryptionScheme = "None"
   }
   salesforce.Name Name {
     apiName = "Lead.Name"
@@ -151,6 +157,7 @@ type salesforce.Lead {
     updateable = false
     queryable = true
     _hidden_value = true
+    encryptionScheme = "None"
   }
   salesforce.Number NumberOfEmployees {
     apiName = "Lead.NumberOfEmployees"
@@ -177,6 +184,7 @@ type salesforce.Lead {
     createable = true
     updateable = true
     queryable = true
+    encryptionScheme = "None"
   }
   salesforce.Picklist Pronouns {
     apiName = "Lead.Pronouns"
@@ -210,6 +218,7 @@ type salesforce.Lead {
     unique = false
     caseSensitive = false
     queryable = true
+    encryptionScheme = "None"
   }
   salesforce.Url Website {
     apiName = "Lead.Website"
@@ -217,6 +226,7 @@ type salesforce.Lead {
     createable = true
     updateable = true
     queryable = true
+    encryptionScheme = "None"
   }
   serviceid Id {
     apiName = "Lead.Id"

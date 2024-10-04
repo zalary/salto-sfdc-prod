@@ -9,6 +9,7 @@ type salesforce.Lead {
     updateable = true
     caseSensitive = false
     queryable = true
+    encryptionScheme = "None"
   }
   salesforce.Number NumberofLocations__c {
     apiName = "Lead.NumberofLocations__c"
@@ -78,5 +79,6 @@ type salesforce.Lead {
     updateable = true
     caseSensitive = false
     queryable = true
+    encryptionScheme = "None"
   }
 }
