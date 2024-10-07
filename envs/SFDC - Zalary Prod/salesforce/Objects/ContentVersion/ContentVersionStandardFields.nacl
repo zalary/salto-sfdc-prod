@@ -391,6 +391,15 @@ type salesforce.ContentVersion {
     updateable = false
     queryable = true
   }
+  salesforce.Checkbox IsEncrypted {
+    apiName = "ContentVersion.IsEncrypted"
+    defaultValue = false
+    label = "Is Encrypted"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
   salesforce.Text VersionDataUrl {
     apiName = "ContentVersion.VersionDataUrl"
     length = 255

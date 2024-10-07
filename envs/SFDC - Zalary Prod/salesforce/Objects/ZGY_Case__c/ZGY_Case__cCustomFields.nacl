@@ -1,0 +1,12 @@
+type salesforce.ZGY_Case__c {
+  salesforce.AutoNumber ZGY_AutoNumber__c {
+    apiName = "ZGY_Case__c.ZGY_AutoNumber__c"
+    externalId = false
+    label = "ZGY_AutoNumber"
+    trackTrending = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

@@ -79,4 +79,47 @@ type salesforce.Lead {
     caseSensitive = false
     queryable = true
   }
+  salesforce.Number Score__c {
+    apiName = "Lead.Score__c"
+    defaultValueFormula = "0"
+    description = "Lead Score"
+    externalId = false
+    label = "Score"
+    precision = 3
+    scale = 0
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox isHot__c {
+    apiName = "Lead.isHot__c"
+    defaultValue = false
+    label = "isHot"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text saltoQuickStartField__c {
+    apiName = "Lead.saltoQuickStartField__c"
+    encryptionScheme = "None"
+    externalId = false
+    label = "saltoQuickStartField"
+    length = 32
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Checkbox webformLead__c {
+    apiName = "Lead.webformLead__c"
+    defaultValue = false
+    description = "Is this lead from our webform?"
+    inlineHelpText = "should be left unchecked when creating a Lead in SFDC.  Used to auto-convert leads from our webform into Contact, Account, Opportunity and Task"
+    label = "Webform Lead"
+    createable = true
+    updateable = true
+    queryable = true
+  }
 }

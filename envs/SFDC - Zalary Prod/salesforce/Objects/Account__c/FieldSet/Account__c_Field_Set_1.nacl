@@ -1,0 +1,9 @@
+salesforce.FieldSet Account__c_Field_Set_1 {
+  fullName = "Account__c.Field_Set_1"
+  description = "zfs"
+  label = "Field Set 1"
+  _parent = [
+    salesforce.Account__c,
+  ]
+  _alias = "Field Set 1"
+}
