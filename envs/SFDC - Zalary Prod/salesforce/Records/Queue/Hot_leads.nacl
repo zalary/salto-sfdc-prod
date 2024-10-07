@@ -1,0 +1,15 @@
+salesforce.Queue Hot_leads {
+  fullName = "Hot_leads"
+  doesSendEmailToMembers = false
+  email = "sfdc@zsalto.io"
+  name = "Hot Leads"
+  queueMembers = {
+    users = {
+      user = "sfdc@zsalto.io"
+    }
+  }
+  queueSobject = {
+    sobjectType = "Lead"
+  }
+  _alias = "Hot_leads"
+}

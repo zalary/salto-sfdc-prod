@@ -1,0 +1,9 @@
+salesforce.ListView Account__c_All {
+  fullName = "Account__c.All"
+  filterScope = "Everything"
+  label = "All"
+  _parent = [
+    salesforce.Account__c,
+  ]
+  _alias = "All"
+}

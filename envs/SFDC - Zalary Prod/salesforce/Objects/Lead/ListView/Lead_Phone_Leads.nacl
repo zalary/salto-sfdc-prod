@@ -1,0 +1,26 @@
+salesforce.ListView Lead_Phone_Leads {
+  fullName = "Lead.Phone_Leads"
+  columns = [
+    "FULL_NAME",
+    "LEAD.COMPANY",
+    "LEAD.STATE",
+    "LEAD.EMAIL",
+    "LEAD.STATUS",
+    "LEAD.CREATED_DATE",
+    "CORE.USERS.ALIAS",
+    "LEAD.UNREAD",
+  ]
+  filterScope = "Everything"
+  filters = [
+    {
+      field = "LEAD.LEAD_SOURCE"
+      operation = "contains"
+      value = "Phone"
+    },
+  ]
+  label = "Phone Leads"
+  _parent = [
+    salesforce.Lead,
+  ]
+  _alias = "Phone Leads"
+}

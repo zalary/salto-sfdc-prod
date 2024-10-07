@@ -1,0 +1,20 @@
+salesforce.ListView Lead_ViewHotLeads {
+  fullName = "Lead.ViewHotLeads"
+  columns = [
+    "FULL_NAME",
+    "LEAD.COMPANY",
+    "LEAD.STATE",
+    "LEAD.EMAIL",
+    "LEAD.STATUS",
+    "LEAD.CREATED_DATE",
+    "CORE.USERS.ALIAS",
+    "LEAD.UNREAD",
+  ]
+  filterScope = "Queue"
+  label = "Hot Leads"
+  queue = salesforce.Queue.instance.Hot_leads
+  _parent = [
+    salesforce.Lead,
+  ]
+  _alias = "Hot Leads"
+}

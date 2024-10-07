@@ -1,0 +1,9 @@
+salesforce.CustomTab Account__c {
+  fullName = "Account__c"
+  customObject = true
+  motif = "Custom1: Heart"
+  _parent = [
+    salesforce.Account__c,
+  ]
+  _alias = "Account__c"
+}
