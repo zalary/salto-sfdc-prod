@@ -1,0 +1,23 @@
+salesforce.MatchingRules Lead {
+  fullName = "Lead"
+  _alias = "Lead"
+  matchingRules = [
+    {
+      fullName = "ZGY2_LeadMatch"
+      label = "ZGY2 LeadMatch"
+      matchingRuleItems = [
+        {
+          blankValueBehavior = "NullNotAllowed"
+          fieldName = "LastName"
+          matchingMethod = "Exact"
+        },
+        {
+          blankValueBehavior = "NullNotAllowed"
+          fieldName = "Pronouns"
+          matchingMethod = "Exact"
+        },
+      ]
+      ruleStatus = "Active"
+    },
+  ]
+}

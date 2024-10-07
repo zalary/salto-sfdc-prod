@@ -1,0 +1,13 @@
+salesforce.EmailTemplate unfiled_public_ZGY_Lead_Mail_1709228126391@zcduuu {
+  available = true
+  encodingKey = "ISO-8859-1"
+  name = "ZGY Lead Mail"
+  relatedEntityType = "Lead"
+  style = "none"
+  subject = "Hello, New Lead"
+  type = "custom"
+  uiType = "SFX"
+  fullName = "unfiled$public/ZGY_Lead_Mail_1709228126391"
+  content = file("salesforce/Records/EmailTemplate/unfiled$public/ZGY_Lead_Mail_1709228126391/ZGY_Lead_Mail_1709228126391.email")
+  _alias = "unfiled$public/ZGY_Lead_Mail_1709228126391"
+}
