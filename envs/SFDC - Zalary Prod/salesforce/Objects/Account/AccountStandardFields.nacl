@@ -176,6 +176,7 @@ type salesforce.Account {
     createable = true
     updateable = true
     queryable = true
+    encryptionScheme = "None"
   }
   salesforce.Picklist Rating {
     apiName = "Account.Rating"
