@@ -8,7 +8,7 @@ salesforce.LanguageSettings {
   enableLocalNamesForStdObjects = false
   enableLocaleInsensitiveFiltering = "false"
   enablePlatformLanguages = false
-  enableTranslationWorkbench = false
+  enableTranslationWorkbench = true
   useLanguageFallback = false
   _alias = "Language"
 }
