@@ -121,6 +121,10 @@ salesforce.Layout CartItem_Cart_Item_Layout@bss {
               field = salesforce.CartItem.field.UnitAdjustmentAmount
             },
             {
+              behavior = "Edit"
+              field = salesforce.CartItem.field.ParentCartItemId
+            },
+            {
               behavior = "Required"
               field = salesforce.CartItem.field.TotalLineNetAmount
             },
@@ -174,6 +178,7 @@ salesforce.Layout CartItem_Cart_Item_Layout@bss {
   ]
   miniLayout = {
     fields = [
+      "ParentCartItemId",
       "TotalLineNetAmount",
       "TotalLineGrossAmount",
       "TotalPriceTaxAmount",

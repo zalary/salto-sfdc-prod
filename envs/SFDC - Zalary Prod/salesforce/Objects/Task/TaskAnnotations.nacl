@@ -144,6 +144,20 @@ type salesforce.Task {
       type = "Default"
     },
     {
+      actionName = "LaunchOmniForManualTask"
+      type = "Default"
+    },
+    {
+      actionName = "LaunchOmniForManualTask"
+      formFactor = "Large"
+      type = "Default"
+    },
+    {
+      actionName = "LaunchOmniForManualTask"
+      formFactor = "Small"
+      type = "Default"
+    },
+    {
       actionName = "NewTask"
       type = "Default"
     },

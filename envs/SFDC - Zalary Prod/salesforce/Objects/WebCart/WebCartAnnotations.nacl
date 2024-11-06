@@ -60,6 +60,20 @@ type salesforce.WebCart {
   label = "Cart"
   actionOverrides = [
     {
+      actionName = "CancelEdit"
+      type = "Default"
+    },
+    {
+      actionName = "CancelEdit"
+      formFactor = "Large"
+      type = "Default"
+    },
+    {
+      actionName = "CancelEdit"
+      formFactor = "Small"
+      type = "Default"
+    },
+    {
       actionName = "List"
       type = "Default"
     },
@@ -70,6 +84,20 @@ type salesforce.WebCart {
     },
     {
       actionName = "List"
+      formFactor = "Small"
+      type = "Default"
+    },
+    {
+      actionName = "SaveEdit"
+      type = "Default"
+    },
+    {
+      actionName = "SaveEdit"
+      formFactor = "Large"
+      type = "Default"
+    },
+    {
+      actionName = "SaveEdit"
       formFactor = "Small"
       type = "Default"
     },

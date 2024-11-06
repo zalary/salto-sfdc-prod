@@ -20,6 +20,18 @@ type salesforce.Location {
     updateable = true
     queryable = true
   }
+  salesforce.Unknown DefaultPickupTime {
+    apiName = "Location.DefaultPickupTime"
+    _hidden_value = true
+  }
+  salesforce.Unknown DefaultProcessingTime {
+    apiName = "Location.DefaultProcessingTime"
+    _hidden_value = true
+  }
+  salesforce.Unknown DefaultProcessingTimeUnit {
+    apiName = "Location.DefaultProcessingTimeUnit"
+    _hidden_value = true
+  }
   salesforce.Text Description {
     apiName = "Location.Description"
     length = 255
@@ -49,6 +61,10 @@ type salesforce.Location {
     unique = false
     caseSensitive = false
     queryable = true
+  }
+  salesforce.Lookup FulfillingBusinessHoursId {
+    apiName = "Location.FulfillingBusinessHoursId"
+    _hidden_value = true
   }
   salesforce.Checkbox IsInventoryLocation {
     apiName = "Location.IsInventoryLocation"

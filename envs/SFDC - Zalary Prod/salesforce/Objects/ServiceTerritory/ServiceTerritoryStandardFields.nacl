@@ -60,6 +60,14 @@ type salesforce.ServiceTerritory {
     updateable = true
     queryable = true
   }
+  salesforce.Unknown SelfCheckInUrl {
+    apiName = "ServiceTerritory.SelfCheckInUrl"
+    _hidden_value = true
+  }
+  salesforce.Unknown ServiceAppointmentLimitType {
+    apiName = "ServiceTerritory.ServiceAppointmentLimitType"
+    _hidden_value = true
+  }
   salesforce.Lookup TopLevelTerritoryId {
     apiName = "ServiceTerritory.TopLevelTerritoryId"
     relationshipName = "TopLevelTerritory"

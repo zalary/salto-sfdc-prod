@@ -15,6 +15,10 @@ type salesforce.Waitlist {
     updateable = true
     queryable = true
   }
+  salesforce.Unknown Link {
+    apiName = "Waitlist.Link"
+    _hidden_value = true
+  }
   salesforce.Text Name {
     apiName = "Waitlist.Name"
     length = 255
@@ -34,6 +38,10 @@ type salesforce.Waitlist {
     createable = true
     updateable = false
     queryable = true
+  }
+  salesforce.Unknown ShouldAllowSelfCheckIn {
+    apiName = "Waitlist.ShouldAllowSelfCheckIn"
+    _hidden_value = true
   }
   serviceid Id {
     apiName = "Waitlist.Id"

@@ -90,6 +90,10 @@ type salesforce.VoiceCall {
     queryable = true
     _hidden_value = true
   }
+  salesforce.Unknown CallSubtype {
+    apiName = "VoiceCall.CallSubtype"
+    _hidden_value = true
+  }
   salesforce.Picklist CallType {
     apiName = "VoiceCall.CallType"
     restricted = true
@@ -152,7 +156,7 @@ type salesforce.VoiceCall {
   salesforce.Phone FromPhoneNumber {
     apiName = "VoiceCall.FromPhoneNumber"
     _required = true
-    label = "Caller Number"
+    label = "Caller Contact Info"
     createable = false
     updateable = false
     queryable = true
@@ -259,7 +263,7 @@ type salesforce.VoiceCall {
   salesforce.Phone ToPhoneNumber {
     apiName = "VoiceCall.ToPhoneNumber"
     _required = true
-    label = "Recipient Number"
+    label = "Recipient Contact Info"
     createable = false
     updateable = false
     queryable = true
@@ -396,7 +400,7 @@ type salesforce.VoiceCall {
   salesforce.Lookup CallRecordingId {
     apiName = "VoiceCall.CallRecordingId"
     relationshipName = "CallRecording"
-    label = "VoiceCallRecording ID"
+    label = "Voice Call Recording ID"
     createable = false
     updateable = false
     queryable = true

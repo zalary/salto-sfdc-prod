@@ -58,7 +58,22 @@ type salesforce.StandardShippingRate {
   apiName = "StandardShippingRate"
   metadataType = "CustomObject"
   label = "Standard Shipping Rate"
+  compactLayoutAssignment = "SYSTEM"
   enableFeeds = false
   externalSharingModel = "ControlledByParent"
+  searchLayouts = {
+    customTabListAdditionalFields = [
+      "LastModifiedDate",
+      "LastModifiedBy",
+      "ShippingZone",
+      "ShippingCarrierMethod",
+    ]
+    searchResultsAdditionalFields = [
+      "LastModifiedDate",
+      "LastModifiedBy",
+      "ShippingZone",
+      "ShippingCarrierMethod",
+    ]
+  }
   _alias = "Standard Shipping Rate"
 }

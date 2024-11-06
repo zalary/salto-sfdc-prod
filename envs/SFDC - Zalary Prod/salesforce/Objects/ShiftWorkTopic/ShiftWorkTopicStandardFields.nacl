@@ -13,13 +13,17 @@ type salesforce.ShiftWorkTopic {
   }
   salesforce.Number MaxAppointments {
     apiName = "ShiftWorkTopic.MaxAppointments"
-    label = "Maximum Appointment"
+    label = "Maximum Concurrent Appointment"
     precision = 9
     createable = true
     updateable = true
     scale = 0
     unique = false
     queryable = true
+  }
+  salesforce.Unknown ServiceAppointmentLimit {
+    apiName = "ShiftWorkTopic.ServiceAppointmentLimit"
+    _hidden_value = true
   }
   salesforce.MasterDetail ShiftId {
     apiName = "ShiftWorkTopic.ShiftId"

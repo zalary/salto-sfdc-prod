@@ -15,4 +15,5 @@ salesforce.OpportunitySettings {
   simpleOppCreateFromContact = "false"
   simpleOppCreateFromEvent = "false"
   _alias = "Opportunity"
+  enableServiceCaseInsights = "false"
 }

@@ -3,13 +3,16 @@ salesforce.ApexTrigger LeadTrigger {
   status = "Active"
   fullName = "LeadTrigger"
   content = file("salesforce/Records/ApexTrigger/LeadTrigger.trigger")
+  _parent = [
+    salesforce.Lead,
+  ]
   _generated_dependencies = [
     {
       reference = salesforce.ApexClass.instance.WebLeadConvert
     },
-    {
-      reference = salesforce.Lead
-    },
   ]
   _alias = "LeadTrigger"
+  triggerTypes = [
+    "UsageAfterInsert",
+  ]
 }

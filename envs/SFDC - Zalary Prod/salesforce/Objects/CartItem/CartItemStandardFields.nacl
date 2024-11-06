@@ -35,6 +35,10 @@ type salesforce.CartItem {
     updateable = false
     queryable = true
   }
+  salesforce.Unknown ChildProductCount {
+    apiName = "CartItem.ChildProductCount"
+    _hidden_value = true
+  }
   salesforce.Summary DistributedAdjustmentAmount {
     apiName = "CartItem.DistributedAdjustmentAmount"
     label = "Distributed Promotions Total"
@@ -125,6 +129,14 @@ type salesforce.CartItem {
     precision = 18
     queryable = true
   }
+  salesforce.Lookup ParentCartItemId {
+    apiName = "CartItem.ParentCartItemId"
+    _hidden_value = true
+  }
+  salesforce.Unknown PerUnitWeight {
+    apiName = "CartItem.PerUnitWeight"
+    _hidden_value = true
+  }
   salesforce.Lookup Product2Id {
     apiName = "CartItem.Product2Id"
     relationshipName = "Product2"
@@ -132,6 +144,14 @@ type salesforce.CartItem {
     createable = true
     updateable = true
     queryable = true
+  }
+  salesforce.Unknown ProductClass {
+    apiName = "CartItem.ProductClass"
+    _hidden_value = true
+  }
+  salesforce.Unknown ProductValidationKey {
+    apiName = "CartItem.ProductValidationKey"
+    _hidden_value = true
   }
   salesforce.Number Quantity {
     apiName = "CartItem.Quantity"
@@ -161,6 +181,10 @@ type salesforce.CartItem {
     unique = false
     caseSensitive = false
     queryable = true
+  }
+  salesforce.Unknown StockCheckMethod {
+    apiName = "CartItem.StockCheckMethod"
+    _hidden_value = true
   }
   salesforce.Currency TotalAdjustmentAmount {
     apiName = "CartItem.TotalAdjustmentAmount"
@@ -284,6 +308,10 @@ type salesforce.CartItem {
     queryable = true
     _hidden_value = true
   }
+  salesforce.Unknown TotalWeight {
+    apiName = "CartItem.TotalWeight"
+    _hidden_value = true
+  }
   salesforce.Currency UnitAdjustedPrice {
     apiName = "CartItem.UnitAdjustedPrice"
     label = "Unit Adjusted Price"
@@ -301,6 +329,10 @@ type salesforce.CartItem {
     scale = 2
     precision = 18
     queryable = true
+  }
+  salesforce.Picklist WeightUnit {
+    apiName = "CartItem.WeightUnit"
+    _hidden_value = true
   }
   serviceid Id {
     apiName = "CartItem.Id"

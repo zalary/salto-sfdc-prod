@@ -335,6 +335,10 @@ type salesforce.ServiceAppointment {
     caseSensitive = false
     queryable = true
   }
+  salesforce.Unknown Transaction {
+    apiName = "ServiceAppointment.Transaction"
+    _hidden_value = true
+  }
   salesforce.Lookup WorkTypeId {
     apiName = "ServiceAppointment.WorkTypeId"
     relationshipName = "WorkType"

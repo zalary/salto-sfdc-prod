@@ -179,18 +179,26 @@ type salesforce.Waitlist {
     customTabListAdditionalFields = [
       "ServiceTerritory",
       "IsActive",
+      "ShouldAllowSelfCheckIn",
+      "Link",
     ]
     lookupDialogsAdditionalFields = [
       "ServiceTerritory",
       "IsActive",
+      "ShouldAllowSelfCheckIn",
+      "Link",
     ]
     lookupPhoneDialogsAdditionalFields = [
       "ServiceTerritory",
       "IsActive",
+      "ShouldAllowSelfCheckIn",
+      "Link",
     ]
     searchResultsAdditionalFields = [
       "ServiceTerritory",
       "IsActive",
+      "ShouldAllowSelfCheckIn",
+      "Link",
     ]
   }
   _alias = "Waitlist"

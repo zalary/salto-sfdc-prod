@@ -81,7 +81,7 @@ type salesforce.ShippingConfigurationSet {
     relationshipName = "TargetRecord"
     label = "Store ID"
     createable = true
-    updateable = true
+    updateable = false
     queryable = true
   }
   salesforce.Checkbox IsDefault {

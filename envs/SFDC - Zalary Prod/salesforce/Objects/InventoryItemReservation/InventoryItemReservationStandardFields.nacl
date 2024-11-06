@@ -37,7 +37,6 @@ type salesforce.InventoryItemReservation {
   salesforce.Lookup ProductId {
     apiName = "InventoryItemReservation.ProductId"
     relationshipName = "Product"
-    _required = true
     label = "Product ID"
     createable = true
     updateable = false
