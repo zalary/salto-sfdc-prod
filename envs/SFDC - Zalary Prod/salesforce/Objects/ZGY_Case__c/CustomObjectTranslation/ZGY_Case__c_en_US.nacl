@@ -1,0 +1,24 @@
+salesforce.CustomObjectTranslation ZGY_Case__c_en_US@uuubu {
+  fullName = "ZGY_Case__c-en_US"
+  caseValues = [
+    {
+      plural = false
+      value = "ZGY_Case"
+    },
+    {
+      plural = true
+      value = "ZGY_Cases"
+    },
+  ]
+  fields = [
+    {
+      label = ""
+      name = salesforce.ZGY_Case__c.field.ZGY_AutoNumber__c
+    },
+  ]
+  startsWith = "Consonant"
+  _parent = [
+    salesforce.ZGY_Case__c,
+  ]
+  _alias = "ZGY_Case__c-en_US"
+}
