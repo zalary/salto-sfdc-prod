@@ -1,0 +1,25 @@
+salesforce.CustomObjectTranslation ZGY_Case__c_es@uuub {
+  fullName = "ZGY_Case__c-es"
+  caseValues = [
+    {
+      plural = false
+      value = ""
+    },
+    {
+      plural = true
+      value = ""
+    },
+  ]
+  fields = [
+    {
+      label = "zgy_numbero"
+      name = salesforce.ZGY_Case__c.field.ZGY_AutoNumber__c
+    },
+  ]
+  gender = ""
+  nameFieldLabel = ""
+  _parent = [
+    salesforce.ZGY_Case__c,
+  ]
+  _alias = "ZGY_Case__c-es"
+}
