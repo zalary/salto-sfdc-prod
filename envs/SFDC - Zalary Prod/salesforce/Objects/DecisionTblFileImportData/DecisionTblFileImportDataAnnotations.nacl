@@ -57,8 +57,9 @@ type salesforce.DecisionTblFileImportData {
   }
   apiName = "DecisionTblFileImportData"
   metadataType = "CustomObject"
-  label = "DecisionTblFileImportData"
+  label = "Decision Table File data"
+  description = ""
   enableFeeds = false
   externalSharingModel = "Private"
-  _alias = "DecisionTblFileImportData"
+  _alias = "Decision Table File data"
 }

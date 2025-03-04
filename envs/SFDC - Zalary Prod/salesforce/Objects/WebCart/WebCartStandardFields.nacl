@@ -15,6 +15,14 @@ type salesforce.WebCart {
     queryable = true
     _hidden_value = true
   }
+  salesforce.Unknown FirstPymtGrandTotalAmount {
+    apiName = "WebCart.FirstPymtGrandTotalAmount"
+    _hidden_value = true
+  }
+  salesforce.Unknown FirstPymtTotalTaxAmount {
+    apiName = "WebCart.FirstPymtTotalTaxAmount"
+    _hidden_value = true
+  }
   salesforce.Currency GrandTotalAmount {
     apiName = "WebCart.GrandTotalAmount"
     label = "Grand Total Amount in Cart"
@@ -242,6 +250,10 @@ type salesforce.WebCart {
     queryable = true
     _hidden_value = true
   }
+  salesforce.Unknown TotalSubProductCount {
+    apiName = "WebCart.TotalSubProductCount"
+    _hidden_value = true
+  }
   salesforce.Currency TotalTaxAmount {
     apiName = "WebCart.TotalTaxAmount"
     label = "Total Tax Amount in Cart"
@@ -345,6 +357,10 @@ type salesforce.WebCart {
     caseSensitive = false
     queryable = true
   }
+  salesforce.Unknown TotalChargeFirstPymtTaxAmount {
+    apiName = "WebCart.TotalChargeFirstPymtTaxAmount"
+    _hidden_value = true
+  }
   salesforce.Summary TotalChargeItemAdjAmount {
     apiName = "WebCart.TotalChargeItemAdjAmount"
     label = "Total adjustment amount on a cart item of type charge. Includes discount and surcharge."
@@ -424,6 +440,10 @@ type salesforce.WebCart {
     createable = false
     updateable = false
     queryable = true
+    _hidden_value = true
+  }
+  salesforce.Unknown TotalProductFirstPymtTaxAmount {
+    apiName = "WebCart.TotalProductFirstPymtTaxAmount"
     _hidden_value = true
   }
   salesforce.Summary TotalProductItemAdjAmount {

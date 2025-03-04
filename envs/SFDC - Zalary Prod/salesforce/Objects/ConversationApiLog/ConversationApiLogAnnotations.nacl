@@ -1,4 +1,4 @@
-type salesforce.DTRecordsetReplica {
+type salesforce.ConversationApiLog {
   annotations {
     serviceid apiName {
     }
@@ -6,13 +6,13 @@ type salesforce.DTRecordsetReplica {
     }
     string label {
     }
+    string description {
+    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
-    }
-    string description {
     }
     boolean enableDataTranslation {
     }
@@ -55,10 +55,11 @@ type salesforce.DTRecordsetReplica {
     hidden_string internalId {
     }
   }
-  apiName = "DTRecordsetReplica"
+  apiName = "ConversationApiLog"
   metadataType = "CustomObject"
-  label = "Decision Table Recordset Replica"
+  label = "ConversationApiLog"
+  description = ""
   enableFeeds = false
   externalSharingModel = "Private"
-  _alias = "Decision Table Recordset Replica"
+  _alias = "ConversationApiLog"
 }

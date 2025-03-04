@@ -58,6 +58,7 @@ type salesforce.ExpressionSet {
   apiName = "ExpressionSet"
   metadataType = "CustomObject"
   label = "Expression Set"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

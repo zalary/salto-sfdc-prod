@@ -131,6 +131,15 @@ type salesforce.RevenueTransactionErrorLog {
     queryable = true
     _hidden_value = true
   }
+  salesforce.Lookup PrimaryRecord2Id {
+    apiName = "RevenueTransactionErrorLog.PrimaryRecord2Id"
+    label = "Primary Record 2 ID"
+    relationshipName = "PrimaryRecord2"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
   salesforce.Lookup AsyncOperationTrackerId {
     apiName = "RevenueTransactionErrorLog.AsyncOperationTrackerId"
     relationshipName = "AsyncOperationTracker"

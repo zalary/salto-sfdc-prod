@@ -71,14 +71,11 @@ type salesforce.DeliveryEstimationSetup {
   }
   salesforce.Lookup LastSyncedById {
     apiName = "DeliveryEstimationSetup.LastSyncedById"
-    _hidden_value = true
-  }
-  salesforce.Unknown LastSyncedDate {
-    apiName = "DeliveryEstimationSetup.LastSyncedDate"
-    _hidden_value = true
-  }
-  salesforce.Unknown LastSyncedMessage {
-    apiName = "DeliveryEstimationSetup.LastSyncedMessage"
+    label = "User ID"
+    relationshipName = "LastSyncedBy"
+    createable = false
+    updateable = false
+    queryable = true
     _hidden_value = true
   }
   salesforce.Lookup LocationGroupId {
@@ -101,10 +98,11 @@ type salesforce.DeliveryEstimationSetup {
     caseSensitive = false
     queryable = true
   }
-  salesforce.Unknown SyncStatus {
-    apiName = "DeliveryEstimationSetup.SyncStatus"
+  salesforce.Unknown ServiceRegion {
+    apiName = "DeliveryEstimationSetup.ServiceRegion"
     _hidden_value = true
   }
+  
   serviceid Id {
     apiName = "DeliveryEstimationSetup.Id"
     label = "Delivery Estimation Setup ID"

@@ -205,4 +205,15 @@ type salesforce.AsyncOperationTracker {
     queryable = true
     _hidden_value = true
   }
+  salesforce.Number SequenceNumber {
+    apiName = "AsyncOperationTracker.SequenceNumber"
+    label = "Sequence Number"
+    scale = 0
+    precision = 9
+    unique = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
 }

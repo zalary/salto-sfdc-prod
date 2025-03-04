@@ -29,7 +29,11 @@ type salesforce.CommSubscriptionChannelType {
   }
   salesforce.Lookup MessagingChannelUsageId {
     apiName = "CommSubscriptionChannelType.MessagingChannelUsageId"
-    _hidden_value = true
+    label = "Messaging Channel Usage ID"
+    relationshipName = "MessagingChannelUsage"
+    createable = true
+    updateable = true
+    queryable = true
   }
   salesforce.Text Name {
     apiName = "CommSubscriptionChannelType.Name"

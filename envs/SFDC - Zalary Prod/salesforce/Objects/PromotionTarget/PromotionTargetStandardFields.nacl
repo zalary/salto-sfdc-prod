@@ -186,6 +186,17 @@ type salesforce.PromotionTarget {
     queryable = true
     _hidden_value = true
   }
+  salesforce.Text TargetStandardShippingRateName {
+    apiName = "PromotionTarget.TargetStandardShippingRateName"
+    label = "Target Standard Shipping Rate Name"
+    length = 180
+    unique = false
+    caseSensitive = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
   salesforce.Picklist TargetRuleCriteriaType {
     apiName = "PromotionTarget.TargetRuleCriteriaType"
     restricted = true

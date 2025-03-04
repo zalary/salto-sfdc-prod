@@ -23,7 +23,6 @@ salesforce.Flow ZGY_Flow_1 {
       },
     ]
     nameSegment = "emailSimple"
-    versionSegment = 1
   }
   apiVersion = 60
   environments = "Default"

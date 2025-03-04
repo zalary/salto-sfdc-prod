@@ -150,4 +150,12 @@ type salesforce.StandardShippingRate {
     queryable = true
     _hidden_value = true
   }
+  salesforce.Picklist WeightUnit {
+    apiName = "StandardShippingRate.WeightUnit"
+    label = "Unit of Weight"
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
 }

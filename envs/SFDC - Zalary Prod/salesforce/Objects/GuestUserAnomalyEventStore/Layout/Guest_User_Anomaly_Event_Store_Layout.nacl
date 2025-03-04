@@ -10,15 +10,15 @@ salesforce.Layout GuestUserAnomalyEventStore_Guest_User_Anomaly_Event_Store_Layo
           layoutItems = [
             {
               behavior = "Readonly"
-              field = salesforce.GuestUserAnomalyEventStore.field.GuestUserAnomalyEventNumber
+              field = "GuestUserAnomalyEventNumber"
             },
             {
               behavior = "Required"
-              field = salesforce.GuestUserAnomalyEventStore.field.EventIdentifier
+              field = "EventIdentifier"
             },
             {
               behavior = "Edit"
-              field = salesforce.GuestUserAnomalyEventStore.field.Summary
+              field = "Summary"
             },
           ]
         },
@@ -26,11 +26,11 @@ salesforce.Layout GuestUserAnomalyEventStore_Guest_User_Anomaly_Event_Store_Layo
           layoutItems = [
             {
               behavior = "Required"
-              field = salesforce.GuestUserAnomalyEventStore.field.EventDate
+              field = "EventDate"
             },
             {
               behavior = "Edit"
-              field = salesforce.GuestUserAnomalyEventStore.field.Score
+              field = "Score"
             },
           ]
         },
@@ -47,15 +47,15 @@ salesforce.Layout GuestUserAnomalyEventStore_Guest_User_Anomaly_Event_Store_Layo
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.GuestUserAnomalyEventStore.field.TotalControllerEvents
+              field = "TotalControllerEvents"
             },
             {
               behavior = "Edit"
-              field = salesforce.GuestUserAnomalyEventStore.field.UserAgent
+              field = "UserAgent"
             },
             {
               behavior = "Edit"
-              field = salesforce.GuestUserAnomalyEventStore.field.SoqlCommands
+              field = "SoqlCommands"
             },
           ]
         },
@@ -63,11 +63,11 @@ salesforce.Layout GuestUserAnomalyEventStore_Guest_User_Anomaly_Event_Store_Layo
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.GuestUserAnomalyEventStore.field.RequestedEntities
+              field = "RequestedEntities"
             },
             {
               behavior = "Edit"
-              field = salesforce.GuestUserAnomalyEventStore.field.UserType
+              field = "UserType"
             },
           ]
         },
@@ -84,7 +84,7 @@ salesforce.Layout GuestUserAnomalyEventStore_Guest_User_Anomaly_Event_Store_Layo
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.GuestUserAnomalyEventStore.field.UserId
+              field = "UserId"
             },
           ]
         },
@@ -92,7 +92,7 @@ salesforce.Layout GuestUserAnomalyEventStore_Guest_User_Anomaly_Event_Store_Layo
           layoutItems = [
             {
               behavior = "Edit"
-              field = salesforce.GuestUserAnomalyEventStore.field.SourceIp
+              field = "SourceIp"
             },
           ]
         },
@@ -123,8 +123,5 @@ salesforce.Layout GuestUserAnomalyEventStore_Guest_User_Anomaly_Event_Store_Layo
   showRunAssignmentRulesCheckbox = false
   showSubmitAndAttachButton = false
   fullName = "GuestUserAnomalyEventStore-Guest User Anomaly Event Store Layout"
-  _parent = [
-    salesforce.GuestUserAnomalyEventStore,
-  ]
   _alias = "GuestUserAnomalyEventStore-Guest User Anomaly Event Store Layout"
 }

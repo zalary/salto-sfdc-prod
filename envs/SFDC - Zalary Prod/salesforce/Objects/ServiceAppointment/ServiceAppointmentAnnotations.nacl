@@ -58,6 +58,7 @@ type salesforce.ServiceAppointment {
   apiName = "ServiceAppointment"
   metadataType = "CustomObject"
   label = "Service Appointment"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"
@@ -239,5 +240,15 @@ type salesforce.ServiceAppointment {
     enableTopics = false
   }
   historyTrackedFields = {
+  }
+  salesforce.Text Transaction {
+    apiName = "ServiceAppointment.Transaction"
+    label = "Transaction"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
   }
 }

@@ -58,6 +58,7 @@ type salesforce.VoiceCall {
   apiName = "VoiceCall"
   metadataType = "CustomObject"
   label = "Voice Call"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"
@@ -165,4 +166,13 @@ type salesforce.VoiceCall {
     ]
   }
   _alias = "Voice Call"
+  salesforce.Picklist CallSubtype {
+    apiName = "VoiceCall.CallSubtype"
+    label = "Call Subtype"
+    restricted = true
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
 }

@@ -58,6 +58,7 @@ type salesforce.DeliveryEstimationSetup {
   apiName = "DeliveryEstimationSetup"
   metadataType = "CustomObject"
   label = "Delivery Estimation Setup"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"
@@ -194,4 +195,31 @@ type salesforce.DeliveryEstimationSetup {
     searchResultsAdditionalFields = "ExternalReference"
   }
   _alias = "Delivery Estimation Setup"
+  salesforce.DateTime LastSyncedDate {
+    apiName = "DeliveryEstimationSetup.LastSyncedDate"
+    label = "Last Synced Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.LongTextArea LastSyncedMessage {
+    apiName = "DeliveryEstimationSetup.LastSyncedMessage"
+    label = "Last Synced Message"
+    length = 10000
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist SyncStatus {
+    apiName = "DeliveryEstimationSetup.SyncStatus"
+    label = "Sync Status"
+    _required = true
+    restricted = true
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
 }
