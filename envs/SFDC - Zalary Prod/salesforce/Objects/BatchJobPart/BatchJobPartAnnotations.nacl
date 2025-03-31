@@ -1,4 +1,4 @@
-type salesforce.OrgMetricScanSummary {
+type salesforce.BatchJobPart {
   annotations {
     serviceid apiName {
     }
@@ -6,13 +6,13 @@ type salesforce.OrgMetricScanSummary {
     }
     string label {
     }
+    string description {
+    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
-    }
-    string description {
     }
     boolean enableDataTranslation {
     }
@@ -55,9 +55,9 @@ type salesforce.OrgMetricScanSummary {
     hidden_string internalId {
     }
   }
-  apiName = "OrgMetricScanSummary"
+  apiName = "BatchJobPart"
   metadataType = "CustomObject"
-  label = "Org Metric Scan Summary"
+  label = "Batch Job Part"
   description = ""
   actionOverrides = [
     {
@@ -75,44 +75,16 @@ type salesforce.OrgMetricScanSummary {
       type = "Default"
     },
     {
-      actionName = "Clone"
+      actionName = "DownloadFailedRecords"
       type = "Default"
     },
     {
-      actionName = "Clone"
+      actionName = "DownloadFailedRecords"
       formFactor = "Large"
       type = "Default"
     },
     {
-      actionName = "Clone"
-      formFactor = "Small"
-      type = "Default"
-    },
-    {
-      actionName = "Delete"
-      type = "Default"
-    },
-    {
-      actionName = "Delete"
-      formFactor = "Large"
-      type = "Default"
-    },
-    {
-      actionName = "Delete"
-      formFactor = "Small"
-      type = "Default"
-    },
-    {
-      actionName = "Edit"
-      type = "Default"
-    },
-    {
-      actionName = "Edit"
-      formFactor = "Large"
-      type = "Default"
-    },
-    {
-      actionName = "Edit"
+      actionName = "DownloadFailedRecords"
       formFactor = "Small"
       type = "Default"
     },
@@ -127,20 +99,6 @@ type salesforce.OrgMetricScanSummary {
     },
     {
       actionName = "List"
-      formFactor = "Small"
-      type = "Default"
-    },
-    {
-      actionName = "New"
-      type = "Default"
-    },
-    {
-      actionName = "New"
-      formFactor = "Large"
-      type = "Default"
-    },
-    {
-      actionName = "New"
       formFactor = "Small"
       type = "Default"
     },
@@ -187,7 +145,8 @@ type salesforce.OrgMetricScanSummary {
       type = "Default"
     },
   ]
+  compactLayoutAssignment = "SYSTEM"
   enableFeeds = false
   externalSharingModel = "ControlledByParent"
-  _alias = "Org Metric Scan Summary"
+  _alias = "Batch Job Part"
 }
