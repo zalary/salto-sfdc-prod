@@ -132,4 +132,14 @@ type salesforce.Account {
     updateable = true
     queryable = true
   }
+  salesforce.Picklist ZGY_Global_Picky__c {
+    apiName = "Account.ZGY_Global_Picky__c"
+    description = "global picklist set"
+    label = "ZGY_Global_Picky"
+    valueSetName = salesforce.GlobalValueSet.instance.ZGY_Picky
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
 }

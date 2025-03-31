@@ -1,0 +1,33 @@
+salesforce.GlobalValueSet ZGY_Picky {
+  fullName = "ZGY_Picky"
+  customValue = [
+    {
+      fullName = "Oranges"
+      default = false
+      label = "Oranges"
+    },
+    {
+      fullName = "Mango"
+      default = false
+      label = "Mango"
+    },
+    {
+      fullName = "Durian"
+      default = false
+      label = "Durian"
+    },
+    {
+      fullName = "Yuzu"
+      default = false
+      label = "Yuzu"
+    },
+    {
+      fullName = "Lime"
+      default = false
+      label = "Lime"
+    },
+  ]
+  masterLabel = "ZGY_Picky"
+  sorted = false
+  _alias = "ZGY_Picky"
+}
