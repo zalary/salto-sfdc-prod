@@ -1,0 +1,9 @@
+salesforce.FieldSet Account_ZGY_Field_Set_1 {
+  fullName = "Account.ZGY_Field_Set_1"
+  description = "zgy"
+  label = "ZGY Field Set_1"
+  _parent = [
+    salesforce.Account,
+  ]
+  _alias = "ZGY Field Set_1"
+}

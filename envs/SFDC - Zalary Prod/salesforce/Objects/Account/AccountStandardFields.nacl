@@ -29,6 +29,7 @@ type salesforce.Account {
   }
   salesforce.Address BillingAddress {
     apiName = "Account.BillingAddress"
+    encryptionScheme = "None"
     label = "Billing Address"
     createable = false
     updateable = false
@@ -53,6 +54,7 @@ type salesforce.Account {
   }
   salesforce.LongTextArea Description {
     apiName = "Account.Description"
+    encryptionScheme = "None"
     length = 32000
     label = "Account Description"
     createable = true
@@ -71,6 +73,7 @@ type salesforce.Account {
   }
   salesforce.Phone Fax {
     apiName = "Account.Fax"
+    encryptionScheme = "None"
     label = "Account Fax"
     createable = true
     updateable = true
@@ -117,6 +120,7 @@ type salesforce.Account {
   }
   salesforce.Text Name {
     apiName = "Account.Name"
+    encryptionScheme = "None"
     length = 255
     _required = true
     label = "Account Name"
@@ -134,14 +138,6 @@ type salesforce.Account {
     updateable = true
     scale = 0
     unique = false
-    queryable = true
-  }
-  salesforce.Lookup OperatingHoursId {
-    apiName = "Account.OperatingHoursId"
-    relationshipName = "OperatingHours"
-    label = "Operating Hour ID"
-    createable = true
-    updateable = true
     queryable = true
   }
   salesforce.Lookup OwnerId {
@@ -172,6 +168,7 @@ type salesforce.Account {
   }
   salesforce.Phone Phone {
     apiName = "Account.Phone"
+    encryptionScheme = "None"
     label = "Account Phone"
     createable = true
     updateable = true
@@ -188,6 +185,7 @@ type salesforce.Account {
   }
   salesforce.Address ShippingAddress {
     apiName = "Account.ShippingAddress"
+    encryptionScheme = "None"
     label = "Shipping Address"
     createable = false
     updateable = false
@@ -216,6 +214,7 @@ type salesforce.Account {
   }
   salesforce.Text Site {
     apiName = "Account.Site"
+    encryptionScheme = "None"
     length = 80
     label = "Account Site"
     createable = true
@@ -259,6 +258,7 @@ type salesforce.Account {
   }
   salesforce.Url Website {
     apiName = "Account.Website"
+    encryptionScheme = "None"
     label = "Website"
     createable = true
     updateable = true

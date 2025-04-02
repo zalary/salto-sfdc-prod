@@ -47,6 +47,14 @@ salesforce.Layout Account_Account__28Sales_29_Layout@bspps {
               behavior = "Edit"
               field = salesforce.Account.field.NumberOfEmployees
             },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.ZGY_Custom_Fruits__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.ZGY_Global_Picky__c
+            },
           ]
         },
         {

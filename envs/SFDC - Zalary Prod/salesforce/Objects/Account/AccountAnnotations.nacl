@@ -286,9 +286,9 @@ type salesforce.Account {
     },
   ]
   compactLayoutAssignment = "SYSTEM"
+  enableEnhancedLookup = true
   enableFeeds = true
   enableHistory = false
-  externalSharingModel = "Private"
   searchLayouts = {
     customTabListAdditionalFields = [
       "ACCOUNT.NAME",
