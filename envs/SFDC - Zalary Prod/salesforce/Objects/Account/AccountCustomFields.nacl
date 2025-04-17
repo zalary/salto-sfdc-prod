@@ -132,6 +132,33 @@ type salesforce.Account {
     updateable = true
     queryable = true
   }
+  salesforce.Picklist ZGY_Custom_Fruits__c {
+    apiName = "Account.ZGY_Custom_Fruits__c"
+    description = "I am a description.  I previously updated the FLS on this field to include Gold Partner User but a fetch did not pick it up.  Will changing the field itself allow for pickup?  We're going to test that!  #projectfarm"
+    label = "ZGY_Custom_Fruits"
+    valueSet = [
+      {
+        fullName = "Apples"
+        default = false
+        label = "Apples"
+      },
+      {
+        fullName = "Lemons"
+        default = false
+        label = "Lemons"
+      },
+      {
+        fullName = "Yuzu"
+        default = false
+        label = "Yuzu"
+      },
+    ]
+    sorted = false
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
   salesforce.Picklist ZGY_Global_Picky__c {
     apiName = "Account.ZGY_Global_Picky__c"
     description = "global picklist set"
