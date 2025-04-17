@@ -140,8 +140,5 @@ type salesforce.CartValidationOutput {
     label = "Cart ID"
     _required = true
     relationshipName = "Cart"
-    createable = true
-    updateable = false
-    queryable = true
   }
 }

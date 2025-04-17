@@ -170,9 +170,6 @@ type salesforce.VoiceCall {
     apiName = "VoiceCall.CallSubtype"
     label = "Call Subtype"
     restricted = true
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
 }

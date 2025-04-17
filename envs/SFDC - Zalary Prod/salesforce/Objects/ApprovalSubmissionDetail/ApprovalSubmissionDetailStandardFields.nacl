@@ -4,9 +4,6 @@ type salesforce.ApprovalSubmissionDetail {
     label = "Action Channel Name"
     _required = true
     restricted = true
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.Text ActionContext {
@@ -15,9 +12,6 @@ type salesforce.ApprovalSubmissionDetail {
     length = 255
     unique = false
     caseSensitive = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.Picklist ActionName {
@@ -25,18 +19,12 @@ type salesforce.ApprovalSubmissionDetail {
     label = "Action Name"
     _required = true
     restricted = true
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.Lookup ActionPerformedById {
     apiName = "ApprovalSubmissionDetail.ActionPerformedById"
     label = "User ID"
     relationshipName = "ActionPerformedBy"
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.Picklist ActionPerformerRole {
@@ -44,9 +32,6 @@ type salesforce.ApprovalSubmissionDetail {
     label = "Action Performer Role"
     _required = true
     restricted = true
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.MasterDetail ApprovalSubmissionId {
@@ -54,27 +39,18 @@ type salesforce.ApprovalSubmissionDetail {
     label = "Approval Submission ID"
     _required = true
     relationshipName = "ApprovalSubmission"
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.Lookup ApprovalWorkItemId {
     apiName = "ApprovalSubmissionDetail.ApprovalWorkItemId"
     label = "Approval Work Item ID"
     relationshipName = "ApprovalWorkItem"
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.Html Comments {
     apiName = "ApprovalSubmissionDetail.Comments"
     label = "Comments"
     length = 32000
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   serviceid Id {
@@ -87,59 +63,38 @@ type salesforce.ApprovalSubmissionDetail {
     apiName = "ApprovalSubmissionDetail.IsDeleted"
     label = "Deleted"
     defaultValue = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.AutoNumber Name {
     apiName = "ApprovalSubmissionDetail.Name"
     label = "Approval Submission Detail Name"
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.DateTime CreatedDate {
     apiName = "ApprovalSubmissionDetail.CreatedDate"
     label = "Created Date"
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "ApprovalSubmissionDetail.CreatedById"
     label = "Created By ID"
     relationshipName = "CreatedBy"
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "ApprovalSubmissionDetail.LastModifiedDate"
     label = "Last Modified Date"
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "ApprovalSubmissionDetail.LastModifiedById"
     label = "Last Modified By ID"
     relationshipName = "LastModifiedBy"
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "ApprovalSubmissionDetail.SystemModstamp"
     label = "System Modstamp"
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
 }

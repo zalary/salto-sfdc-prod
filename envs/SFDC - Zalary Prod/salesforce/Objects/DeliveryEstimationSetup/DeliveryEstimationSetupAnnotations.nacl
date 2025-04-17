@@ -198,18 +198,12 @@ type salesforce.DeliveryEstimationSetup {
   salesforce.DateTime LastSyncedDate {
     apiName = "DeliveryEstimationSetup.LastSyncedDate"
     label = "Last Synced Date"
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.LongTextArea LastSyncedMessage {
     apiName = "DeliveryEstimationSetup.LastSyncedMessage"
     label = "Last Synced Message"
     length = 10000
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.Picklist SyncStatus {
@@ -217,9 +211,6 @@ type salesforce.DeliveryEstimationSetup {
     label = "Sync Status"
     _required = true
     restricted = true
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
 }

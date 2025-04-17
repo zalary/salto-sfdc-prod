@@ -247,8 +247,5 @@ type salesforce.ServiceAppointment {
     length = 255
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
 }

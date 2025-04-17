@@ -181,9 +181,6 @@ type salesforce.AlternativePaymentMethod {
     apiName = "AlternativePaymentMethod.BankAccountHolderType"
     label = "Account Ownership Type"
     restricted = true
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.Text BankAccountType {
@@ -192,18 +189,12 @@ type salesforce.AlternativePaymentMethod {
     length = 25
     unique = false
     caseSensitive = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.Picklist StandardEntryClassCode {
     apiName = "AlternativePaymentMethod.StandardEntryClassCode"
     label = "Standard Entry Class Code (ACH)"
     restricted = true
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
 }
