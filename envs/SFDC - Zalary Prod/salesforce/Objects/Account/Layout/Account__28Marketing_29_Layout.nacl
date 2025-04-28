@@ -31,6 +31,14 @@ salesforce.Layout Account_Account__28Marketing_29_Layout@bspps {
               behavior = "Edit"
               field = salesforce.Account.field.Site
             },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.ZGY_Custom_Fruits__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.ZGY_Global_Picky__c
+            },
           ]
         },
         {

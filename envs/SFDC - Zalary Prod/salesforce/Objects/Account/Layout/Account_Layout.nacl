@@ -43,6 +43,14 @@ salesforce.Layout Account_Account_Layout@bs {
               behavior = "Edit"
               field = salesforce.Account.field.AnnualRevenue
             },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.ZGY_Custom_Fruits__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.ZGY_Global_Picky__c
+            },
           ]
         },
         {

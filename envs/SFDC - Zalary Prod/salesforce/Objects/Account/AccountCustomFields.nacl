@@ -50,10 +50,12 @@ type salesforce.Account {
   }
   salesforce.Date SLAExpirationDate__c {
     apiName = "Account.SLAExpirationDate__c"
+    encryptionScheme = "None"
     label = "SLA Expiration Date"
   }
   salesforce.Text SLASerialNumber__c {
     apiName = "Account.SLASerialNumber__c"
+    encryptionScheme = "None"
     externalId = false
     label = "SLA Serial Number"
     length = 10
@@ -139,6 +141,7 @@ type salesforce.Account {
     apiName = "Account.ZGY_Global_Picky__c"
     description = "global picklist set"
     label = "ZGY_Global_Picky"
+    securityClassification = "Public"
     valueSetName = salesforce.GlobalValueSet.instance.ZGY_Picky
     restricted = true
   }

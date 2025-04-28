@@ -20,6 +20,7 @@ type salesforce.Account {
   }
   salesforce.Address BillingAddress {
     apiName = "Account.BillingAddress"
+    encryptionScheme = "None"
     label = "Billing Address"
     _hidden_value = true
   }
@@ -35,6 +36,7 @@ type salesforce.Account {
   }
   salesforce.LongTextArea Description {
     apiName = "Account.Description"
+    encryptionScheme = "None"
     length = 32000
     label = "Account Description"
   }
@@ -47,6 +49,7 @@ type salesforce.Account {
   }
   salesforce.Phone Fax {
     apiName = "Account.Fax"
+    encryptionScheme = "None"
     label = "Account Fax"
   }
   salesforce.Picklist Industry {
@@ -78,6 +81,7 @@ type salesforce.Account {
   }
   salesforce.Text Name {
     apiName = "Account.Name"
+    encryptionScheme = "None"
     length = 255
     _required = true
     label = "Account Name"
@@ -90,11 +94,6 @@ type salesforce.Account {
     precision = 8
     scale = 0
     unique = false
-  }
-  salesforce.Lookup OperatingHoursId {
-    apiName = "Account.OperatingHoursId"
-    relationshipName = "OperatingHours"
-    label = "Operating Hour ID"
   }
   salesforce.Lookup OwnerId {
     apiName = "Account.OwnerId"
@@ -115,6 +114,7 @@ type salesforce.Account {
   }
   salesforce.Phone Phone {
     apiName = "Account.Phone"
+    encryptionScheme = "None"
     label = "Account Phone"
   }
   salesforce.Picklist Rating {
@@ -125,6 +125,7 @@ type salesforce.Account {
   }
   salesforce.Address ShippingAddress {
     apiName = "Account.ShippingAddress"
+    encryptionScheme = "None"
     label = "Shipping Address"
     _hidden_value = true
   }
@@ -144,6 +145,7 @@ type salesforce.Account {
   }
   salesforce.Text Site {
     apiName = "Account.Site"
+    encryptionScheme = "None"
     length = 80
     label = "Account Site"
     unique = false
@@ -175,6 +177,7 @@ type salesforce.Account {
   }
   salesforce.Url Website {
     apiName = "Account.Website"
+    encryptionScheme = "None"
     label = "Website"
   }
   salesforce.Text YearStarted {
