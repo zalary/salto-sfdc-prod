@@ -176,6 +176,5 @@ type salesforce.AlternativePaymentMethod {
   salesforce.Address PaymentMethodAddress {
     apiName = "AlternativePaymentMethod.PaymentMethodAddress"
     label = "Payment Method Address"
-    _hidden_value = true
   }
 }

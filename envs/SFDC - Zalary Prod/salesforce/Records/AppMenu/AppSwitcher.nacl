@@ -94,10 +94,6 @@ salesforce.AppMenu AppSwitcher {
       type = "CustomApplication"
     },
     {
-      name = salesforce.CustomApplication.instance.standard__ExpressionSetConsole
-      type = "CustomApplication"
-    },
-    {
       name = salesforce.CustomApplication.instance.standard__Approvals
       type = "CustomApplication"
     },

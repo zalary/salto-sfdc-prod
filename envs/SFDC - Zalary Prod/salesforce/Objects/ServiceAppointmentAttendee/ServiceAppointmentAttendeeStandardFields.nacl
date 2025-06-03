@@ -12,7 +12,6 @@ type salesforce.ServiceAppointmentAttendee {
   }
   salesforce.Unknown HasAttended {
     apiName = "ServiceAppointmentAttendee.HasAttended"
-    _hidden_value = true
   }
   salesforce.Lookup ServiceAppointmentId {
     apiName = "ServiceAppointmentAttendee.ServiceAppointmentId"
@@ -23,7 +22,6 @@ type salesforce.ServiceAppointmentAttendee {
   }
   salesforce.Unknown Status {
     apiName = "ServiceAppointmentAttendee.Status"
-    _hidden_value = true
   }
   serviceid Id {
     apiName = "ServiceAppointmentAttendee.Id"

@@ -198,19 +198,23 @@ type salesforce.DeliveryEstimationSetup {
   salesforce.DateTime LastSyncedDate {
     apiName = "DeliveryEstimationSetup.LastSyncedDate"
     label = "Last Synced Date"
-    _hidden_value = true
   }
   salesforce.LongTextArea LastSyncedMessage {
     apiName = "DeliveryEstimationSetup.LastSyncedMessage"
     label = "Last Synced Message"
     length = 10000
-    _hidden_value = true
   }
   salesforce.Picklist SyncStatus {
     apiName = "DeliveryEstimationSetup.SyncStatus"
     label = "Sync Status"
     _required = true
     restricted = true
-    _hidden_value = true
+  }
+  salesforce.Text ServiceRegion {
+    apiName = "DeliveryEstimationSetup.ServiceRegion"
+    label = "Service Region"
+    length = 256
+    unique = false
+    caseSensitive = false
   }
 }

@@ -2,41 +2,54 @@ type salesforce.Account {
   salesforce.Picklist Active__c {
     apiName = "Account.Active__c"
     label = "Active"
-    valueSet = [
-      {
-        fullName = "No"
-        default = false
-        label = "No"
-      },
-      {
-        fullName = "Yes"
-        default = false
-        label = "Yes"
-      },
-    ]
+    valueSet = {
+      values = {
+        No = {
+          fullName = "No"
+          default = false
+          label = "No"
+        }
+        Yes = {
+          fullName = "Yes"
+          default = false
+          label = "Yes"
+        }
+      }
+      order = [
+        salesforce.Account.field.Active__c.valueSet.values.No,
+        salesforce.Account.field.Active__c.valueSet.values.Yes,
+      ]
+    }
     sorted = false
     restricted = false
   }
   salesforce.Picklist CustomerPriority__c {
     apiName = "Account.CustomerPriority__c"
     label = "Customer Priority"
-    valueSet = [
-      {
-        fullName = "High"
-        default = false
-        label = "High"
-      },
-      {
-        fullName = "Low"
-        default = false
-        label = "Low"
-      },
-      {
-        fullName = "Medium"
-        default = false
-        label = "Medium"
-      },
-    ]
+    valueSet = {
+      values = {
+        High = {
+          fullName = "High"
+          default = false
+          label = "High"
+        }
+        Low = {
+          fullName = "Low"
+          default = false
+          label = "Low"
+        }
+        Medium = {
+          fullName = "Medium"
+          default = false
+          label = "Medium"
+        }
+      }
+      order = [
+        salesforce.Account.field.CustomerPriority__c.valueSet.values.High,
+        salesforce.Account.field.CustomerPriority__c.valueSet.values.Low,
+        salesforce.Account.field.CustomerPriority__c.valueSet.values.Medium,
+      ]
+    }
     sorted = false
     restricted = false
   }
@@ -63,51 +76,66 @@ type salesforce.Account {
   salesforce.Picklist SLA__c {
     apiName = "Account.SLA__c"
     label = "SLA"
-    valueSet = [
-      {
-        fullName = "Gold"
-        default = false
-        label = "Gold"
-      },
-      {
-        fullName = "Silver"
-        default = false
-        label = "Silver"
-      },
-      {
-        fullName = "Platinum"
-        default = false
-        label = "Platinum"
-      },
-      {
-        fullName = "Bronze"
-        default = false
-        label = "Bronze"
-      },
-    ]
+    valueSet = {
+      values = {
+        Gold = {
+          fullName = "Gold"
+          default = false
+          label = "Gold"
+        }
+        Silver = {
+          fullName = "Silver"
+          default = false
+          label = "Silver"
+        }
+        Platinum = {
+          fullName = "Platinum"
+          default = false
+          label = "Platinum"
+        }
+        Bronze = {
+          fullName = "Bronze"
+          default = false
+          label = "Bronze"
+        }
+      }
+      order = [
+        salesforce.Account.field.SLA__c.valueSet.values.Gold,
+        salesforce.Account.field.SLA__c.valueSet.values.Silver,
+        salesforce.Account.field.SLA__c.valueSet.values.Platinum,
+        salesforce.Account.field.SLA__c.valueSet.values.Bronze,
+      ]
+    }
     sorted = false
     restricted = false
   }
   salesforce.Picklist UpsellOpportunity__c {
     apiName = "Account.UpsellOpportunity__c"
     label = "Upsell Opportunity"
-    valueSet = [
-      {
-        fullName = "Maybe"
-        default = false
-        label = "Maybe"
-      },
-      {
-        fullName = "No"
-        default = false
-        label = "No"
-      },
-      {
-        fullName = "Yes"
-        default = false
-        label = "Yes"
-      },
-    ]
+    valueSet = {
+      values = {
+        Maybe = {
+          fullName = "Maybe"
+          default = false
+          label = "Maybe"
+        }
+        No = {
+          fullName = "No"
+          default = false
+          label = "No"
+        }
+        Yes = {
+          fullName = "Yes"
+          default = false
+          label = "Yes"
+        }
+      }
+      order = [
+        salesforce.Account.field.UpsellOpportunity__c.valueSet.values.Maybe,
+        salesforce.Account.field.UpsellOpportunity__c.valueSet.values.No,
+        salesforce.Account.field.UpsellOpportunity__c.valueSet.values.Yes,
+      ]
+    }
     sorted = false
     restricted = false
   }
@@ -115,23 +143,30 @@ type salesforce.Account {
     apiName = "Account.ZGY_Custom_Fruits__c"
     description = "I am a description.  I previously updated the FLS on this field to include Gold Partner User but a fetch did not pick it up.  Will changing the field itself allow for pickup?  We're going to test that!  #projectfarm"
     label = "ZGY_Custom_Fruits"
-    valueSet = [
-      {
-        fullName = "Apples"
-        default = false
-        label = "Apples"
-      },
-      {
-        fullName = "Lemons"
-        default = false
-        label = "Lemons"
-      },
-      {
-        fullName = "Yuzu"
-        default = false
-        label = "Yuzu"
-      },
-    ]
+    valueSet = {
+      values = {
+        Apples = {
+          fullName = "Apples"
+          default = false
+          label = "Apples"
+        }
+        Lemons = {
+          fullName = "Lemons"
+          default = false
+          label = "Lemons"
+        }
+        Yuzu = {
+          fullName = "Yuzu"
+          default = false
+          label = "Yuzu"
+        }
+      }
+      order = [
+        salesforce.Account.field.ZGY_Custom_Fruits__c.valueSet.values.Apples,
+        salesforce.Account.field.ZGY_Custom_Fruits__c.valueSet.values.Lemons,
+        salesforce.Account.field.ZGY_Custom_Fruits__c.valueSet.values.Yuzu,
+      ]
+    }
     sorted = false
     restricted = true
   }

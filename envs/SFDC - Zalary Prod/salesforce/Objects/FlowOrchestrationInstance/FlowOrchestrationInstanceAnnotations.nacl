@@ -135,4 +135,11 @@ type salesforce.FlowOrchestrationInstance {
   enableFeeds = false
   externalSharingModel = "Private"
   _alias = "Orchestration Run"
+  salesforce.Text OrchestrationLabel {
+    apiName = "FlowOrchestrationInstance.OrchestrationLabel"
+    label = "Orchestration Name"
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
 }

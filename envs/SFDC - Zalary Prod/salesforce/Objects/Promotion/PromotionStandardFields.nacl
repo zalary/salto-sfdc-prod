@@ -1,7 +1,6 @@
 type salesforce.Promotion {
   salesforce.Unknown AreQualItemsExclFromDiscounts {
     apiName = "Promotion.AreQualItemsExclFromDiscounts"
-    _hidden_value = true
   }
   salesforce.Lookup CampaignId {
     apiName = "Promotion.CampaignId"
@@ -16,12 +15,10 @@ type salesforce.Promotion {
   salesforce.Unknown DiscountOrder {
     apiName = "Promotion.DiscountOrder"
     inlineHelpText = "Select whether to apply discounts to the most expensive or least expensive products first."
-    _hidden_value = true
   }
   salesforce.Unknown DiscountRestriction {
     apiName = "Promotion.DiscountRestriction"
     inlineHelpText = "Restrict which products can be discounted."
-    _hidden_value = true
   }
   salesforce.Text DisplayName {
     apiName = "Promotion.DisplayName"
@@ -113,7 +110,6 @@ type salesforce.Promotion {
   salesforce.Unknown TargetCriteria {
     apiName = "Promotion.TargetCriteria"
     inlineHelpText = "Define whether a cart must meet the criteria for any target or all targets."
-    _hidden_value = true
   }
   salesforce.Html TermsAndConditions {
     apiName = "Promotion.TermsAndConditions"

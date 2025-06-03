@@ -25,6 +25,7 @@ salesforce.Flow ZGY_Flow_1 {
     nameSegment = "emailSimple"
   }
   apiVersion = 60
+  areMetricsLoggedToDataCloud = false
   environments = "Default"
   interviewLabel = "ZGY Flow 1 {!$Flow.CurrentDateTime}"
   label = "ZGY Flow 1"

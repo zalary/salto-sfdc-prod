@@ -22,6 +22,7 @@ salesforce.Flow ZGY_Flow_2 {
     nameSegment = "NewNote"
   }
   apiVersion = 60
+  areMetricsLoggedToDataCloud = false
   description = "v3"
   environments = "Default"
   interviewLabel = "ZGY Flow 2 {!$Flow.CurrentDateTime}"

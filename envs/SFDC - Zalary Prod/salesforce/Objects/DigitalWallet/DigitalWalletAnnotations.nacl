@@ -177,4 +177,11 @@ type salesforce.DigitalWallet {
   enableFeeds = false
   externalSharingModel = "ReadWrite"
   _alias = "Digital Wallet"
+  salesforce.Text BillingName {
+    apiName = "DigitalWallet.BillingName"
+    label = "Billing Name"
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
 }

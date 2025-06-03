@@ -2,7 +2,6 @@ type salesforce.FlowOrchestrationInstance {
   salesforce.Unknown Duration {
     apiName = "FlowOrchestrationInstance.Duration"
     label = "Duration"
-    _hidden_value = true
   }
   salesforce.Text OrchestrationDeveloperName {
     apiName = "FlowOrchestrationInstance.OrchestrationDeveloperName"
@@ -10,11 +9,6 @@ type salesforce.FlowOrchestrationInstance {
     label = "Orchestration Developer Name"
     unique = false
     caseSensitive = false
-    _hidden_value = true
-  }
-  salesforce.Unknown OrchestrationLabel {
-    apiName = "FlowOrchestrationInstance.OrchestrationLabel"
-    _hidden_value = true
   }
   salesforce.Lookup OwnerId {
     apiName = "FlowOrchestrationInstance.OwnerId"
@@ -90,6 +84,5 @@ type salesforce.FlowOrchestrationInstance {
     length = 100
     unique = false
     caseSensitive = false
-    _hidden_value = true
   }
 }

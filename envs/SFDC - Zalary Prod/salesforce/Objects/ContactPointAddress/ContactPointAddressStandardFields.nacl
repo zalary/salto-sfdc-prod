@@ -10,7 +10,6 @@ type salesforce.ContactPointAddress {
   salesforce.Address Address {
     apiName = "ContactPointAddress.Address"
     label = "Address"
-    _hidden_value = true
   }
   salesforce.Picklist AddressType {
     apiName = "ContactPointAddress.AddressType"

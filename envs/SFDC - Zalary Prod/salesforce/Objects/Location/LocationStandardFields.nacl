@@ -13,15 +13,12 @@ type salesforce.Location {
   }
   salesforce.Unknown DefaultPickupTime {
     apiName = "Location.DefaultPickupTime"
-    _hidden_value = true
   }
   salesforce.Unknown DefaultProcessingTime {
     apiName = "Location.DefaultProcessingTime"
-    _hidden_value = true
   }
   salesforce.Unknown DefaultProcessingTimeUnit {
     apiName = "Location.DefaultProcessingTimeUnit"
-    _hidden_value = true
   }
   salesforce.Text Description {
     apiName = "Location.Description"
@@ -46,7 +43,6 @@ type salesforce.Location {
   }
   salesforce.Lookup FulfillingBusinessHoursId {
     apiName = "Location.FulfillingBusinessHoursId"
-    _hidden_value = true
   }
   salesforce.Checkbox IsInventoryLocation {
     apiName = "Location.IsInventoryLocation"
@@ -62,7 +58,6 @@ type salesforce.Location {
     apiName = "Location.Location"
     label = "Location"
     scale = 0
-    _hidden_value = true
   }
   salesforce.Number LocationLevel {
     apiName = "Location.LocationLevel"
@@ -70,7 +65,6 @@ type salesforce.Location {
     precision = 9
     scale = 0
     unique = false
-    _hidden_value = true
   }
   salesforce.Picklist LocationType {
     apiName = "Location.LocationType"
@@ -121,7 +115,6 @@ type salesforce.Location {
     apiName = "Location.RootLocationId"
     relationshipName = "RootLocation"
     label = "Root Location ID"
-    _hidden_value = true
   }
   salesforce.Checkbox ShouldSyncWithOci {
     apiName = "Location.ShouldSyncWithOci"

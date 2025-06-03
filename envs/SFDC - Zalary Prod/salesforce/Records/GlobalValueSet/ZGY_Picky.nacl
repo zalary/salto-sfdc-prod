@@ -1,32 +1,41 @@
 salesforce.GlobalValueSet ZGY_Picky {
   fullName = "ZGY_Picky"
-  customValue = [
-    {
-      fullName = "Oranges"
-      default = false
-      label = "Oranges"
-    },
-    {
-      fullName = "Mango"
-      default = false
-      label = "Mango"
-    },
-    {
-      fullName = "Durian"
-      default = false
-      label = "Durian"
-    },
-    {
-      fullName = "Yuzu"
-      default = false
-      label = "Yuzu"
-    },
-    {
-      fullName = "Lime"
-      default = false
-      label = "Lime"
-    },
-  ]
+  customValue = {
+    values = {
+      Oranges = {
+        fullName = "Oranges"
+        default = false
+        label = "Oranges"
+      }
+      Mango = {
+        fullName = "Mango"
+        default = false
+        label = "Mango"
+      }
+      Durian = {
+        fullName = "Durian"
+        default = false
+        label = "Durian"
+      }
+      Yuzu = {
+        fullName = "Yuzu"
+        default = false
+        label = "Yuzu"
+      }
+      Lime = {
+        fullName = "Lime"
+        default = false
+        label = "Lime"
+      }
+    }
+    order = [
+      salesforce.GlobalValueSet.instance.ZGY_Picky.customValue.values.Oranges,
+      salesforce.GlobalValueSet.instance.ZGY_Picky.customValue.values.Mango,
+      salesforce.GlobalValueSet.instance.ZGY_Picky.customValue.values.Durian,
+      salesforce.GlobalValueSet.instance.ZGY_Picky.customValue.values.Yuzu,
+      salesforce.GlobalValueSet.instance.ZGY_Picky.customValue.values.Lime,
+    ]
+  }
   masterLabel = "ZGY_Picky"
   sorted = false
   _alias = "ZGY_Picky"
