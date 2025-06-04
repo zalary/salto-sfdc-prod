@@ -2,10 +2,10 @@ salesforce.GlobalValueSet ZGY_Picky {
   fullName = "ZGY_Picky"
   customValue = {
     values = {
-      Oranges = {
-        fullName = "Oranges"
+      Orange = {
+        fullName = "Orange"
         default = false
-        label = "Oranges"
+        label = "Orange"
       }
       Mango = {
         fullName = "Mango"
@@ -29,8 +29,8 @@ salesforce.GlobalValueSet ZGY_Picky {
       }
     }
     order = [
-      salesforce.GlobalValueSet.instance.ZGY_Picky.customValue.values.Oranges,
       salesforce.GlobalValueSet.instance.ZGY_Picky.customValue.values.Mango,
+      salesforce.GlobalValueSet.instance.ZGY_Picky.customValue.values.Orange,
       salesforce.GlobalValueSet.instance.ZGY_Picky.customValue.values.Durian,
       salesforce.GlobalValueSet.instance.ZGY_Picky.customValue.values.Yuzu,
       salesforce.GlobalValueSet.instance.ZGY_Picky.customValue.values.Lime,
