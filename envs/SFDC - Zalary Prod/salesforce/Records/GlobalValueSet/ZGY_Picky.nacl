@@ -27,12 +27,6 @@ salesforce.GlobalValueSet ZGY_Picky {
         default = false
         label = "Lime"
       }
-      Oranges = {
-        fullName = "Oranges"
-        default = false
-        isActive = false
-        label = "Oranges"
-      }
     }
     order = [
       salesforce.GlobalValueSet.instance.ZGY_Picky.customValue.values.Mango,
@@ -40,7 +34,6 @@ salesforce.GlobalValueSet ZGY_Picky {
       salesforce.GlobalValueSet.instance.ZGY_Picky.customValue.values.Durian,
       salesforce.GlobalValueSet.instance.ZGY_Picky.customValue.values.Yuzu,
       salesforce.GlobalValueSet.instance.ZGY_Picky.customValue.values.Lime,
-      salesforce.GlobalValueSet.instance.ZGY_Picky.customValue.values.Oranges,
     ]
   }
   masterLabel = "ZGY_Picky"
