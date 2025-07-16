@@ -74,6 +74,7 @@ type salesforce.Opportunity {
     label = "Next Step"
     unique = false
     caseSensitive = false
+    encryptionScheme = "None"
   }
   salesforce.Lookup OwnerId {
     apiName = "Opportunity.OwnerId"
