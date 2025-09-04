@@ -214,6 +214,10 @@ type salesforce.ServiceAppointment {
     unique = false
     caseSensitive = false
   }
+  salesforce.Unknown TimeZone {
+    apiName = "ServiceAppointment.TimeZone"
+    inlineHelpText = "Specifies the time zone recorded when the appointment was booked or last modified (typically this is the patient's time zone). This may differ from the time zone used in the service appointment's scheduled start and end times, which reflect the logged in user’s time zone."
+  }
   salesforce.Lookup WorkTypeId {
     apiName = "ServiceAppointment.WorkTypeId"
     relationshipName = "WorkType"

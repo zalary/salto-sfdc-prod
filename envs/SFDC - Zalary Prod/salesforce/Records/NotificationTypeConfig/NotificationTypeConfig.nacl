@@ -80,6 +80,13 @@ salesforce.NotificationTypeConfig NotificationTypeConfig {
     },
     {
       notificationChannels = {
+        desktopEnabled = true
+        mobileEnabled = false
+      }
+      notificationType = "credit_memo_generation"
+    },
+    {
+      notificationChannels = {
         desktopEnabled = false
         mobileEnabled = false
       }
@@ -203,6 +210,13 @@ salesforce.NotificationTypeConfig NotificationTypeConfig {
         mobileEnabled = true
       }
       notificationType = "personal_analytic"
+    },
+    {
+      notificationChannels = {
+        desktopEnabled = true
+        mobileEnabled = false
+      }
+      notificationType = "personal_org_creation"
     },
     {
       notificationChannels = {
