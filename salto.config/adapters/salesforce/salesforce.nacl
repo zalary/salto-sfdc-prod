@@ -20,6 +20,12 @@ salesforce {
       ]
       exclude = [
         {
+          metadataType = "Report"
+        },
+        {
+          metadataType = "ReportType"
+        },
+        {
           metadataType = "ReportFolder"
         },
         {
